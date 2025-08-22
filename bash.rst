@@ -91,3 +91,102 @@ Editar y transformar texto::
 Procesar y analizar texto (scanning). Imprimir la primera columna de cada línea::
 
   awk '{print $1}' archivo
+
+
+Búsqueda y filtros
+------
+
+Buscar archivos y directorios::
+
+  find directorio -name 'archivo'
+
+Buscar archivo mediante base de datos::
+
+  locate 'archivo'
+
+Buscar patrones de text rápido::
+
+  ag patron
+
+Muestra donde esta instalado el programa::
+
+  pip show
+
+
+Información del sistema
+------
+
+Mostrar procesos en ejecución::
+
+  top
+
+Versión mejorada de top::
+
+  htop
+
+Mostrar espacio en el disco::
+
+  df -h
+
+Mostrar el uso del espacio por directorio::
+
+  du -h
+
+Mostrar memoria libre y utilizada::
+
+  free
+
+Red y conectividad
+------
+
+Verificar conectividad con el servidor::
+
+  ping dominio.com
+
+Mostrar información de red::
+
+  ifconfig 
+
+Mostrar conexiones red::
+
+  netstat -tulpn
+
+
+Comandos generales
+------
+
+Mostrar manual del comando::
+
+  man comando
+
+Mostrar historial de comandos::
+
+  history
+
+Limpiar consola::
+
+  clean
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

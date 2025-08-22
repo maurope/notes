@@ -136,6 +136,23 @@ Mostrar memoria libre y utilizada::
 
   free
 
+
+Comandos generales
+------
+
+Mostrar manual del comando::
+
+  man comando
+
+Mostrar historial de comandos::
+
+  history
+
+Limpiar consola::
+
+  clean
+
+
 Red y conectividad
 ------
 
@@ -152,20 +169,6 @@ Mostrar conexiones red::
   netstat -tulpn
 
 
-Comandos generales
-------
-
-Mostrar manual del comando::
-
-  man comando
-
-Mostrar historial de comandos::
-
-  history
-
-Limpiar consola::
-
-  clean
 
 
 

@@ -29,6 +29,20 @@ Install Basic Local Alignment Search Tool (BLAST)::
   sudo apt install ncbi-blast+
 
 
+Requirements
+------------
+Install the requirements by entering the following commands in the terminal:
+
+Install biopython module::
+
+  pip install biopython
+
+Install Basic Local Alignment Search Tool (BLAST)::
+
+  sudo apt update
+  sudo apt install ncbi-blast+
+
+
 Example
 -------
 

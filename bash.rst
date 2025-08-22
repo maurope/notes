@@ -1,23 +1,12 @@
-* Written by Camila Riccio, Mauricio Peñuela, Camilo Rocha and Jorge Finke
-* Last update: 04/04/22 
 
-CentOFinder
+COMANDOS BASH
 -----------
 
-This is a Python3 implementation to predict the centromere of rice chromosomes using CentO sequences.
-The CentOFinder module takes as input a fasta file with a rice chromosome sequence, 
-divide the chromosome into windows of the length indicated by the user (Kbp windows are usually used),
-aligns the CentO sequence in the chromosome using the BLAST algorithm,
-and detects de window with highest frecuency of CentO alignments.
-As in rice the centromere is usually a region between 2 and 3 Mbp, the module predicts a centromeric
-region for each of these longitudes based on the midpoint of the window with the highest frequency 
-of CentO alignments.
-
-Setup
+Navegación y exploración de archivos
 ------
-Clone the repository::
+Listar archivos y directorios::
 
-  git clone git@github.com:criccio35/CentOFinder.git
+  ls
 
 
 Requirements

@@ -4,13 +4,13 @@ COMANDOS BASH
 Navegación y exploración de archivos
 ------
 Listar archivos y directorios: ::
-ls
+  ls
 
 Cambiar de directorio: ::
-cd
+  cd
 
 Mostrar ruta del directorio actual: ::
-pwd
+  pwd
 
 
 Manipulación de archivos de texto

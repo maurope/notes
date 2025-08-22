@@ -15,15 +15,18 @@ Filtrar el archivo delta::
 
 	delta-filter -q -r name.delta > name.filter
 
+
+Para las siguientes acciones puede también usarse el archivo filtrado name.filter
+
 Extraer coordenadas::
 
-	show-coords -r -c -l name.delta > name.coords # puede usarse también el archivo filtrado name.filter
+	show-coords -r -c -l name.delta > name.coords 
 
 
 Extraer snps::
 
-	show-snps -C name.delta > name.snps # puede usarse también el archivo filtrado name.filter
+	show-snps -C name.delta > name.snps 
 
 Visualizar alineamiento::
 
-	mummerplot -p name_plot --filter --png name.delta  # puede usarse también el archivo filtrado name.filter
+	mummerplot -p name_plot --filter --png name.delta  

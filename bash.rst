@@ -9,9 +9,11 @@ Listar archivos y directorios::
   ls
 
 Cambiar de directorio::
+
   cd
 
 Mostrar ruta del directorio actual::
+
   pwd
 
 

@@ -141,6 +141,18 @@ También se puede cambiar el nombre de la columna que se muestra::
 
 	SELECT id, name AS nombre FROM user;
 
+Agrupación de datos, crearemos una tabla de productos::
+
+	CREATE TABLE product(
+	id int not null auto_increment,
+	name varchar(50) not null,
+	created_by int not null,
+	marca varchar(50) not null,
+	primary key(id),
+	foreign key (created_by) references user(id))
+	);
+
+	
 
 
 

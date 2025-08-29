@@ -152,9 +152,68 @@ Agrupación de datos, crearemos una tabla de productos::
 	foreign key (created_by) references user(id))
 	);
 
-	
+Para cambiar el nombre de la tabla::
+
+	rename table products to product;
+
+Para insertar varios datos al tiempo::
+
+	insert into product (name, created_by, marca)
+	values
+	('ipad', 1, 'apple'),
+	('iphone', 1, 'apple'),
+	('watch', 2, 'apple'),
+	('imac', 3, 'apple'),
+	('ipad mini', 2, 'apple');
+
+Para ver como quedó la tabla::
+
+	select * from product;
+
+Juntar las tablas y hacer que el id de la tabla de usuario sea igual al created_by de la tabla de producto::
+
+	select u.id, u.email, p.name from user u 
+	left join product p on u.id = p.created_by;
+
+Hacerlo con rigth join::
+
+	select u.id, u.email, p.name from user u 
+	rigth join product p on u.id= p.created_by;
+
+Para mostrar la intersección de las tablas::
+
+	select u.id, u.name, p.id, p.name from user u 
+	cross join product p;
+
+Este comando hace un 'producto cruzado' entre todos los datos, puede ser peligroso porque puede dar muchos resultados::
+
+	select u.id, u.name, p.id, p.name from user u 
+	cross join product p;
+
+Contar el número de registros por grupo::
+
+	select count(id), marca from product 
+	group by marca;
+
+	select count(p.id), u.name from product p
+	left join user u on u.id = p.created_by 
+	group by  p.created_by;
+
+Si quiero filtrar los resultados puedo usar having::
+
+	select count (p.id), u.name from product p
+	left join user u on u.id = p.created_by 
+	group by p.created_by 
+	having count(p.id) >=2;
 
 
+Solo me mostrará los conteos iguales o superiores a 2
+
+Para eliminar tablas usamos::
+
+ drop tables product;
+ drop table animales;
+ drop table users;
 
 
 

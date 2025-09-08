@@ -22,3 +22,18 @@ Salir del ambiente virtual::
 
 	deactivate
 
+Si corremos 'which' nos muestra que python3 y pip3 están lanzandose desde nuestro directorio. Si corremos pip freeze n nos mostrará nada porque no hay nada. Vamos a instalar por ejemplo Matplotlib::
+
+	pip3 install matplotlib
+
+Guardar todo lo instalado en un archivo txt para que otro usuario lo pueda ver::
+
+	pip3 freeze > requirements.txt
+
+Mostrar el contenido de este archivo::
+
+	cat requirements.txt
+
+Instalar el contenido de este archivo requirements.txt::
+
+	pip3 install -r requirements.txt

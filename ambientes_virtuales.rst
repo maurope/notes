@@ -37,3 +37,19 @@ Mostrar el contenido de este archivo::
 Instalar el contenido de este archivo requirements.txt::
 
 	pip3 install -r requirements.txt
+
+Llamar librerías de otras partes::
+
+	pip3 install request
+
+Instalar librería para webserver::
+
+	pip3 install fastapi
+
+Librería para webserver::
+
+	pip3 install "uvicorn[standard]"
+
+Cuando ya estoy corriendo la API en la terminal, el reload hace que se recargue cada vez que genero un cambio::
+
+	uvicorn main: ap --reload
